@@ -1,0 +1,42 @@
+{
+  "name": "jiankechu/hyperf-manager",
+  "description": "开箱即用的Hyperf后台扩展，laravel-admin用法",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "jiankechu",
+      "email": "jianke.z@foxmail.com"
+    }
+  ],
+  "keywords": [
+    "hyperf",
+    "Admin",
+    "Manager",
+    "Vue"
+  ],
+  "require": {
+    "php": ">=7.3",
+    "ext-swoole": ">=4.5",
+    "hyperf/model-cache": "^2.0.0",
+    "hyperf/redis": "^2.0.0",
+    "96qbhy/hyperf-auth": "^2.3",
+    "hyperf/paginator": "~2.1.0",
+    "hyperf-plus/route": "~2.1.0|dev-master",
+    "hyperf-plus/ui": "~1.0.0|dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "JiankeChu\\HManager\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "HPlus\\Admin\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "hyperf": {
+      "config": "\\HPlus\\Admin\\ConfigProvider"
+    }
+  }
+}
